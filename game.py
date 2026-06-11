@@ -7,8 +7,7 @@
 #create random number
 import random
 
-randNum = random.randrange(1,10)
-
+randNum = random.randint(0,1000)
 #take user input
 print("Guess the lucky number!")
 userGuess = input()
