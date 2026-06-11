@@ -15,9 +15,17 @@ userGuess = input()
 
 #convert string input (userGuess) to number 
 userGuess_int = int(userGuess)
-#compare both numbers
-if randNum != userGuess_int:
-    print("You did not guess the lucky number...")
-else:
-    print("You guessed the lucky number!!")
 
+#create a loop giving you a fixed amount of attempts - while loop 4 iterations 
+x = 1
+while x < 5:
+    #compare both numbers
+    if randNum != userGuess_int:
+        print("You did not guess the lucky number. Guess again...")
+        userGuess_int = int(input())   ##wrapping function in a function
+    else:
+        print("You guessed the lucky number!!")
+        break
+    x += 1
+
+print("Game over. Would you like to play again?")
