@@ -1,8 +1,7 @@
-#this is a guessing game
-##the computer generates a random number - there must exist a function and a variable
-##accept user input as a guess - so your guess is a variable 
-##function that compares your variable to the random number
-#if not same, returns sorry you're wrong, and exits
+#Number-Guessing-Game
+
+#This is a guessing game, where the computer generates a random number and accepts user input as a guess
+# If not same, returns sorry you're wrong, and exits
 
 #create random number
 import random
@@ -17,14 +16,14 @@ userGuess_int = int(userGuess)
 
 #define a hint function- game tells you whether userGuess is too high or too low
 def userHint(real, guess):
-    real = randNum
-    guess = userGuess_int
     if real < guess:
         print("Guess is too high")
     elif real > guess:
         print("Guess is too low")
     else:
         pass
+
+
 
 #create a loop giving you a fixed amount of attempts - while loop 4 iterations 
 x = 1
